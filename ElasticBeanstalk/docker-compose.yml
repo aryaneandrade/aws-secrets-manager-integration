@@ -1,0 +1,15 @@
+
+name: bia
+services:
+  server:
+    environment:
+      DB_HOST: <database-hostname>
+      DB_PORT: "<database-port>"
+      DB_PWD: <database-password>
+      DB_USER: <database-username>
+    image: <your-image-repository>:<tag>
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "<host-port>"
+        protocol: tcp
