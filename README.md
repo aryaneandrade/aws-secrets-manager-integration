@@ -2,13 +2,13 @@
 
 Este repositório apresenta a implementação prática de uma solução avançada para **gestão segura de credenciais** em ambientes de computação em nuvem.
 
-O objetivo principal é demonstrar a utilização do **AWS Secrets Manager** para o gerenciamento centralizado e a rotação automática de credenciais, assegurando a conformidade e mitigando riscos relacionados à exposição de segredos em aplicações distribuídas.
-
 ---
 
 ## ✅ Objetivo do Projeto
 
-Estabelecer uma arquitetura segura para a gestão de segredos em aplicações cloud-native, eliminando o uso de credenciais estáticas e implementando a automação da rotação de senhas no banco de dados Amazon RDS.
+O principal objetivo deste projeto é demonstrar a aplicação de boas práticas de segurança na nuvem por meio do uso do **AWS Secrets Manager** para o gerenciamento centralizado de segredos e a rotação automática de credenciais. A proposta visa garantir conformidade com padrões de segurança e mitigar riscos associados à exposição de informações sensíveis em ambientes distribuídos.
+
+A solução estabelece uma **arquitetura segura e escalável** para aplicações cloud-native, substituindo credenciais estáticas por mecanismos seguros de obtenção dinâmica de segredos e automatizando a rotação de senhas no **Amazon RDS**, promovendo maior governança, rastreabilidade e resiliência operacional.
 
 ---
 
@@ -33,7 +33,7 @@ Diagrama da arquitetura:
 | **AWS Secrets Manager**| Serviço de gerenciamento seguro e rotação automatizada de segredos  |
 | **Amazon RDS**         | Banco de dados relacional com suporte à rotação automática de credenciais  |
 | **Amazon ECS**         | Plataforma para orquestração e gerenciamento de containers Docker  |
-| **AWS Elastic Beanstalk** | Plataforma PaaS para deployment e gerenciamento de aplicações web  |
+| **AWS Elastic Beanstalk** | Plataforma PaaS para deployment eO objetivo principal é demonstrar a utilização do AWS Secrets Manager para o gerenciamento centralizado e a rotação automática de credenciais, assegurando a conformidade e mitigando riscos relaciona gerenciamento de aplicações web  |
 | **Docker**             | Ambiente de containerização local para desenvolvimento e testes  |
 
 ---
@@ -60,7 +60,7 @@ Deploy de aplicação web utilizando AWS Elastic Beanstalk, com integração seg
 - Deploy gerenciado, escalável e seguro com suporte a rotação automática de credenciais
 
 ### 3️⃣ Ambiente Local com Docker
-
+O objetivo principal é demonstrar a utilização do AWS Secrets Manager para o gerenciamento centralizado e a rotação automática de credenciais, assegurando a conformidade e mitigando riscos relaciona
 **Descrição:**  
 Execução da aplicação em ambiente Docker local para fins de desenvolvimento e testes, integrando o consumo seguro de segredos via AWS Secrets Manager.
 
@@ -87,7 +87,7 @@ Execução da aplicação em ambiente Docker local para fins de desenvolvimento 
 ![Aplicação em Execução](./images/app-eb.png) 
 
 ### Criação de Segredo no AWS Secrets Manager para Acesso ao RDS
-![Secrets Manager](./images/secrets-manager-setup.png) 
+![Secrets Manager](./images/secrets.png) 
 
 ### Injeção Segura de Segredos no ECS através de Task Definition
 ![Secrets Manager](./images/setup-secrets-ecs.png) 
@@ -96,7 +96,7 @@ Execução da aplicação em ambiente Docker local para fins de desenvolvimento 
 ![Secrets Manager](./images/setup-secrets-eb.png) 
 
 ### Rotação Automática no Amazon RDS 
-![RDS Rotation](./images/rds-rotation.png) 
+![RDS Rotation](./images/rotation.png) 
 
 
 
