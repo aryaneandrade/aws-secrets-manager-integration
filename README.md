@@ -22,7 +22,7 @@ A solução foi aplicada em três ambientes distintos, representando cenários r
 
 Diagrama da arquitetura:
 
-![Arquitetura Secrets Manager](./docs/architecture-diagram.png)
+![Arquitetura Secrets Manager](./images/architecture-diagram.png)
 
 ---
 
@@ -77,9 +77,28 @@ Execução da aplicação em ambiente Docker local para fins de desenvolvimento 
 
 ## 📸 Galeria de Capturas
 
-| Configuração do Secrets Manager | Rotação Automática no Amazon RDS | Aplicação em Execução |
-|---------------------------------|---------------------------------|----------------------|
-| ![Secrets Manager](./docs/secrets-manager-setup.png) | ![RDS Rotation](./docs/rds-rotation.png) | ![Aplicação em Execução](./docs/app-secrets-consumption.png) |
+### Aplicação Local com Integração ao AWS Secrets Manager
+![Aplicação em Execução](./images/app-local.png) 
+
+### Aplicação no ECS com Integração ao AWS Secrets Manager
+![Aplicação em Execução](./images/app-ecs.png) 
+
+### Aplicação no Elastic Beanstalk com Integração ao AWS Secrets Manager
+![Aplicação em Execução](./images/app-eb.png) 
+
+### Criação de Segredo no AWS Secrets Manager para Acesso ao RDS
+![Secrets Manager](./images/secrets-manager-setup.png) 
+
+### Injeção Segura de Segredos no ECS através de Task Definition
+![Secrets Manager](./images/setup-secrets-ecs.png) 
+
+### Uso de Secrets Manager no Elastic Beanstalk com Variáveis de Ambiente
+![Secrets Manager](./images/setup-secrets-eb.png) 
+
+### Rotação Automática no Amazon RDS 
+![RDS Rotation](./images/rds-rotation.png) 
+
+
 
 ---
 
