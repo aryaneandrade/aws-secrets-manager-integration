@@ -1,11 +1,5 @@
-## Projeto base para o evento Imersão AWS & IA que irei realizar.
+⚠️ Este repositório utiliza o projeto desenvolvido por Henrylle como base para fins de estudo/teste/implementação.
 
-### Período do evento: 28/07 a 03/08/2025 (Online e ao Vivo às 20h)
+Não sou o autor do projeto original. Toda a autoria e créditos pertencem ao criador original.
 
-[>> Página de Inscrição do evento](https://org.imersaoaws.com.br/github/readme)
-
-#### Para rodar as migrations no container ####
-```
-docker compose exec server bash -c 'npx sequelize db:migrate'
-```
-
+[Link do Projeto Original](https://github.com/henrylle/bia.git) 
